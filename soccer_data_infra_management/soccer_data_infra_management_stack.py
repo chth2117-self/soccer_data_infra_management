@@ -89,7 +89,7 @@ class soccerDataInfraManagementStack(cdk.Stack):
                 actions=[
                     "sts:AssumeRole",
                     "cloudformation:*",
-                    "*"
+                    "kms:*"
                     ]
         )
     )
