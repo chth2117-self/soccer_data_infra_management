@@ -43,7 +43,7 @@ class soccerDataInfraManagementStack(cdk.Stack):
     self.private_subnets = kwargs['private_subnet_ids']
     source_artifact = codepipeline.Artifact()
     cloud_assembly_artifact = codepipeline.Artifact()
-    repo = codecommit.Repository.from_repository_name(self, "CodeCommitRepo", repository_name="soccer-data-infra-management")
+    repo = codecommit.Repository.from_repository_name(self, "CodeCommitRepo", repository_name="soccer_data_infra_management")
     oauth = cdk.SecretValue.secrets_manager("github_token")
     github_source = codepipeline_actions.GitHubSourceAction(oauth_token=oauth,
                 output=source_artifact,
