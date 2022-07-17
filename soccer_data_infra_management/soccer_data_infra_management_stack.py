@@ -132,8 +132,8 @@ class soccerDataInfraManagementStack(cdk.Stack):
   def get_soccer_data_test_kwargs(self, environment):
      Params = {
             'env':{
-                'account': os.environ['CDK_DEFAULT_ACCOUNT'],
-                'region': os.environ['CDK_DEFAULT_REGION']
+                'account': "645551448711",
+                'region': "us-east-2"
               },
             'environment':environment.lower(),
             'container_repo':"soccer-data",
