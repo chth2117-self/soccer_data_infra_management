@@ -137,8 +137,8 @@ class soccerDataInfraManagementStack(cdk.Stack):
                 'region': "us-east-2"
               },
             'environment':environment.lower(),
-            'container_repo':"soccer-data",
-            'container_repo_arn':"arn:aws:ecr:us-east-2:645551448711:repository/soccer-data",
+            'container_repo':"soccer_data",
+            'container_repo_arn':"arn:aws:ecr:us-east-2:645551448711:repository/soccer_data",
             'image_tag':"latest",
             # 'db_secret':f"arn:aws-gov:secretsmanager:us-gov-west-1:{os.environ['CDK_DEFAULT_ACCOUNT']}:secret:soccer-rds-test-rc8Ye5",
             'soccer_data_test_environment':self.get_soccer_data_test_environment(environment),
